@@ -15,7 +15,12 @@ public class FacebookaddressVerification {
         driver.get("https:facebook.com");
         WebElement emailBox= driver.findElement(By.id("email"));
         emailBox.sendKeys("asma@techno.study");
-        WebElement passwordBox=driver.findElement(By.cssSelector("input[type:'password']"));
-        passwordBox.sendKeys("132154");
+        WebElement passwordBox=driver.findElement(By.cssSelector("input[type='password']"));
+        passwordBox.sendKeys("123476547547");
+
+        WebElement loginButton=driver.findElement(By.name("login"));
+        loginButton.click();
+        driver.quit();
+
     }
 }
