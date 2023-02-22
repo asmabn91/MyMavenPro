@@ -23,4 +23,11 @@ public class Utility1 {
 
         driver.quit();
     }
+    public static void Wait(int saniye){
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
